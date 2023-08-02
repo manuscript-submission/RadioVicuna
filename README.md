@@ -44,17 +44,17 @@ Examples from the manuscript :
 
 - To extract the presence of headache from the indication :  
 ```python
-I will present you short indications for radiology exams. Your task is to list all the symptoms from the text and tell me if they correspond to headache (tag them with [/headache]) or to another symptom (tag them with [/other]). If there are no symptoms in the indication (for example "Suspicion de..."), just respond 'No symptom'. Keep to the text only. You will answer only according to this template (replacing the words between brackets with your answer): 
+"""I will present you short indications for radiology exams. Your task is to list all the symptoms from the text and tell me if they correspond to headache (tag them with [/headache]) or to another symptom (tag them with [/other]). If there are no symptoms in the indication (for example "Suspicion de..."), just respond 'No symptom'. Keep to the text only. You will answer only according to this template (replacing the words between brackets with your answer): 
 Symptoms from INDICATION : 
 - Symptom : [retrieve the symptom] [tag with /headache only if the symptom is headache, else tag with /other]
-etc
+etc"""
 ```
 
 - To classify a finding as causing headache or not :
 ```python
-I will present you abnormal findings from radiology exams. Your task is to list all the findings from them and tell me if they usually cause headache or not. Each conclusion is independant and should not influence your answer. You will answer only according to this template: 
+"""I will present you abnormal findings from radiology exams. Your task is to list all the findings from them and tell me if they usually cause headache or not. Each conclusion is independant and should not influence your answer. You will answer only according to this template: 
 List of findings : 
-- List all the findings /can cause headache or not ?
+- List all the findings /can cause headache or not ?"""
 ```
 ## Few-shot
 
