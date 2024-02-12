@@ -38,8 +38,6 @@ few_shots_finding =[
 ['Doctor', '''Your task is to list all the findings of radiology reports and tell me if at least one is abnormal. By abnormal, I mean any sort of lesion, including insignificant ones. Don't forget, stable or regressing findings are abnormal findings! First, list all the sentences of the report. Then, tell me if they describe a normal or an abnormal finding. Finally, tell me if your list contains any abnormal finding. If there is at least one abnormal finding in your list, you must respond Yes. You must respond only according to this template : ID Patient : [Patient's ID] - All findings : [List of all findings (normal or abnormal)] - Any positive finding ? : [If any abnormal finding in your list, you MUST respond Yes, otherwise: No]'''], 
 ['Robot', "I will list all the positive findings of the reports you will provide. If my list includes any abnormal finding, I will answer Yes to your question."],
 
-
-
 ['Doctor', "ID :13813406.0 : Absence d'argument pour une dissection des troncs supra-aortiques. Pas d'argument en faveur d'une TVC."],
 ['Robot', "ID Patient : 13813406.0 - All findings : Absence d'argument pour une dissection des troncs supra-aortiques (normal) ; Pas d'argument en faveur d'une TVC (normal) - Any positive finding ? : No"],
 
