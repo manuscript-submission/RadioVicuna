@@ -92,6 +92,12 @@ List of findings :
 - Pas de modfication des atypies veineuses de développement connues, sans signe de remaniement hémorragique récent /abnormal''']]
 ```
 You may add or remove examples as needed.
+
+## Logprobs
+
+Logprobs are the output probabilities for each token, given the context. It is a mean of accessing the model confidence level for classification tasks, and performs better than asking the model directly for a confidence level. Because the classification method we propose relies on the detection of token of interest, it is possible to display the logprob associated with a rating.
+To do so, edit the script_extraction.py file with "display_logprobs=True"
+
 ## Available models
 
 Nothing limits this method to Vicuna. All models compatible with FastChat can be implemented by just downloading them and madding the path to the weights in the script_extraction.py file.
